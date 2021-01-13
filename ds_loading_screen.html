@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+<style>
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #00B5E2;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+@-webkit-keyframes spin {	
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.center {
+	margin: auto;
+	width: 50%;
+}
+
+h2 {
+	font-family: nunito;
+	text-align: center;
+	font-size: 28px;
+}
+p {
+	font-family: nunito;
+	text-align: center;
+	color: #212121;
+	font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="loader"></div>
+<div class="center">
+	<h2>Processing Document</h2>
+	<p>Please wait a moment while we process your document.</p>
+</div>
+
+</body>
+</html>
