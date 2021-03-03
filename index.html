@@ -48,6 +48,14 @@ p {
 </head>
 <body>
 
+<script>
+const queryString = window.location.search;
+console.log(queryString);
+const urlParams = new URLSearchParams(queryString);
+const product = urlParams.get('status');
+console.log(product);
+</script>
+
 <div class="loader"></div>
 <div class="center">
 	<h2>Processing Document</h2>
