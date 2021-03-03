@@ -48,12 +48,15 @@ p {
 </head>
 <body>
 
+<p id="demo"></p>
+
 <script>
 const queryString = window.location.search;
 console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
 const product = urlParams.get('status');
-console.log(product);
+
+document.getElementById("demo").innerHTML = product;
 </script>
 
 <div class="loader"></div>
