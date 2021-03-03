@@ -51,11 +51,11 @@ p {
 <p id="demo"></p>
 
 <script>
-	const queryString = window.location.search;
+	var queryString = window.location.search;
 	console.log(queryString);
-	const urlParams = new URLSearchParams(queryString);
-	const status = urlParams.get('status');
-	document.getElementById("demo").innerHTML = console.log(status);
+	var urlParams = new URLSearchParams(queryString);
+	var status = urlParams.get('status');
+	document.getElementById("demo").innerHTML = urlParams.get('status');
 </script>
 
 <div class="loader"></div>
