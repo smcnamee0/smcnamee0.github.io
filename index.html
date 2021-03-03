@@ -56,7 +56,7 @@ console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
 const product = urlParams.get('status');
 
-document.getElementById("demo").innerHTML = product;
+document.getElementById("demo").innerHTML = urlParams.get('status');
 </script>
 
 <div class="loader"></div>
